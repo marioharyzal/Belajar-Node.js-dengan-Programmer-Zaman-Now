@@ -1,0 +1,416 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "ups",
+    "trigger": "Exception",
+    "filename": "report.json",
+    "dumpEventTime": "2022-08-07T15:48:42Z",
+    "dumpEventTimeStamp": "1659862122996",
+    "processId": 13523,
+    "threadId": 0,
+    "cwd": "/data/data/com.termux/files/home/test_nodejs",
+    "commandLine": [
+      "node",
+      "report.mjs"
+    ],
+    "nodejsVersion": "v16.15.1",
+    "wordSize": 64,
+    "arch": "arm64",
+    "platform": "android",
+    "componentVersions": {
+      "node": "16.15.1",
+      "v8": "9.4.146.24-node.21",
+      "uv": "1.43.0",
+      "zlib": "1.2.12",
+      "brotli": "1.0.9",
+      "ares": "1.18.1",
+      "modules": "93",
+      "nghttp2": "1.47.0",
+      "napi": "8",
+      "llhttp": "6.0.4",
+      "openssl": "1.1.1o",
+      "cldr": "41.0",
+      "icu": "71.1",
+      "tz": "2022a",
+      "unicode": "14.0"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Gallium",
+      "headersUrl": "https://nodejs.org/download/release/v16.15.1/node-v16.15.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v16.15.1/node-v16.15.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.14.238-N.E.O.L.I.T.-V2",
+    "osVersion": "#1 SMP PREEMPT Thu Jul 8 13:41:28 CEST 2021",
+    "osMachine": "aarch64",
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "ccmni0",
+        "internal": false,
+        "mac": "e2:67:1d:da:a6:f8",
+        "address": "10.18.144.25",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      }
+    ],
+    "host": "localhost"
+  },
+  "javascriptStack": {
+    "message": "Error: ups",
+    "stack": [
+      "at sampleError (file:///data/data/com.termux/files/home/test_nodejs/report.mjs:9:9)",
+      "at file:///data/data/com.termux/files/home/test_nodejs/report.mjs:12:1",
+      "at ModuleJob.run (node:internal/modules/esm/module_job:198:25)",
+      "at async Promise.all (index 0)",
+      "at async ESMLoader.import (node:internal/modules/esm/loader:385:24)",
+      "at async loadESM (node:internal/process/esm_loader:88:5)"
+    ],
+    "errorProperties": {
+    }
+  },
+  "javascriptHeap": {
+    "totalMemory": 5865472,
+    "totalCommittedMemory": 5058360,
+    "usedMemory": 4062696,
+    "availableMemory": 737401808,
+    "memoryLimit": 741605376,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 176128,
+        "committedMemory": 176128,
+        "capacity": 170936,
+        "used": 170936,
+        "available": 0
+      },
+      "old_space": {
+        "memorySize": 2691072,
+        "committedMemory": 2288440,
+        "capacity": 2642408,
+        "used": 2420520,
+        "available": 221888
+      },
+      "code_space": {
+        "memorySize": 368640,
+        "committedMemory": 182432,
+        "capacity": 333440,
+        "used": 333440,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 532480,
+        "committedMemory": 342960,
+        "capacity": 515672,
+        "used": 515672,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1031072,
+        "used": 0,
+        "available": 1031072
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2068400,
+        "capacity": 1031072,
+        "used": 622128,
+        "available": 408944
+      }
+    }
+  },
+  "nativeStack": [
+  ],
+  "resourceUsage": {
+    "userCpuSeconds": 0.59188,
+    "kernelCpuSeconds": 0.062085,
+    "cpuConsumptionPercent": 65.3965,
+    "maxRss": 34136064,
+    "pageFaults": {
+      "IORequired": 126,
+      "IONotRequired": 3418
+    },
+    "fsActivity": {
+      "reads": 53912,
+      "writes": 8
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 0.581452,
+    "kernelCpuSeconds": 0.062298,
+    "cpuConsumptionPercent": 64.375,
+    "fsActivity": {
+      "reads": 53656,
+      "writes": 8
+    }
+  },
+  "libuv": [
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000704a697fd0"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000005d95fa1fa0"
+    },
+    {
+      "type": "timer",
+      "is_active": false,
+      "is_referenced": false,
+      "address": "0x000000712a687160",
+      "repeat": 0,
+      "firesInMsFromNow": -165286189,
+      "expired": true
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000712a6871f8"
+    },
+    {
+      "type": "idle",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x000000712a687270"
+    },
+    {
+      "type": "prepare",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000712a6872e8"
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000712a687360"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000712a6873d8"
+    },
+    {
+      "type": "timer",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000707a691f98",
+      "repeat": 0,
+      "firesInMsFromNow": 8097,
+      "expired": false
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x00000070ba6a66f0",
+      "width": 62,
+      "height": 10,
+      "fd": 17,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000708a692fe8",
+      "signum": 28,
+      "signal": "SIGWINCH"
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x00000070ba6a7280",
+      "width": 62,
+      "height": 10,
+      "fd": 19,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x00000070ba6a5910",
+      "width": 62,
+      "height": 10,
+      "fd": 20,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000708a6914e8",
+      "signum": 12,
+      "signal": "SIGUSR2"
+    },
+    {
+      "type": "loop",
+      "is_active": false,
+      "address": "0x0000005d95fab1d8",
+      "loopIdleTimeSeconds": 0.000588077
+    }
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "VIM": "/data/data/com.termux/files/usr/share/nvim",
+    "SPACESHIP_ROOT": "/data/data/com.termux/files/home/.oh-my-zsh/custom/themes",
+    "TERMUX_IS_DEBUGGABLE_BUILD": "0",
+    "TERMUX_APK_RELEASE": "F_DROID",
+    "SHELL": "/data/data/com.termux/files/usr/bin/zsh",
+    "ANDROID_ART_ROOT": "/apex/com.android.art",
+    "OLDPWD": "/data/data/com.termux/files/home/test_nodejs",
+    "JAVA_HOME": "/data/data/com.termux/files/usr/opt/openjdk",
+    "COLORTERM": "truecolor",
+    "LESS": "-R",
+    "TMPDIR": "/data/data/com.termux/files/usr/tmp",
+    "SPACESHIP_VERSION": "3.16.7",
+    "ANDROID_DATA": "/data",
+    "LD_PRELOAD": "/data/data/com.termux/files/usr/lib/libtermux-exec.so",
+    "ZSH": "/data/data/com.termux/files/home/.oh-my-zsh",
+    "_": "/data/data/com.termux/files/usr/bin/node",
+    "PWD": "/data/data/com.termux/files/home/test_nodejs",
+    "TMUX_TMPDIR": "/data/data/com.termux/files/usr/var/run",
+    "ANDROID_TZDATA_ROOT": "/apex/com.android.tzdata",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:",
+    "BOOTCLASSPATH": "/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar:/system/framework/mediatek-common.jar:/system/framework/mediatek-framework.jar:/system/framework/mediatek-ims-base.jar:/system/framework/mediatek-ims-common.jar:/system/framework/mediatek-telecom-common.jar:/system/framework/mediatek-telephony-base.jar:/system/framework/mediatek-telephony-common.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.wifi/javalib/framework-wifi.jar:/apex/com.android.tethering/javalib/framework-tethering.jar",
+    "DEX2OATBOOTCLASSPATH": "/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar:/system/framework/mediatek-common.jar:/system/framework/mediatek-framework.jar:/system/framework/mediatek-ims-base.jar:/system/framework/mediatek-ims-common.jar:/system/framework/mediatek-telecom-common.jar:/system/framework/mediatek-telephony-base.jar:/system/framework/mediatek-telephony-common.jar",
+    "LOGNAME": "u0_a314",
+    "TMUX_PANE": "%1",
+    "TERM_PROGRAM": "tmux",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "TERM": "xterm-256color",
+    "TMUX": "/data/data/com.termux/files/usr/var/run/tmux-10314/default,5689,0",
+    "LANG": "en_US.UTF-8",
+    "HOME": "/data/data/com.termux/files/home",
+    "TERMUX_APP_PID": "9400",
+    "TERMUX_MAIN_PACKAGE_FORMAT": "debian",
+    "VIMRUNTIME": "/data/data/com.termux/files/usr/share/nvim/runtime",
+    "NVIM": "/data/data/com.termux/files/usr/tmp/nvimdyYmfY/0",
+    "EXTERNAL_STORAGE": "/sdcard",
+    "ANDROID_ROOT": "/system",
+    "TERMUX_VERSION": "0.118.0",
+    "MYVIMRC": "/data/data/com.termux/files/home/.config/nvim/init.lua",
+    "NVIM_LOG_FILE": "/data/data/com.termux/files/home/.cache/nvim/log",
+    "TERMUX_API_VERSION": "0.50.1",
+    "PAGER": "less",
+    "ANDROID_I18N_ROOT": "/apex/com.android.i18n",
+    "SHLVL": "3",
+    "TERM_PROGRAM_VERSION": "3.3",
+    "PATH": "/data/data/com.termux/files/home/.local/share/nvim/mason/bin:/data/data/com.termux/files/usr/bin",
+    "PREFIX": "/data/data/com.termux/files/usr"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 32768,
+      "hard": 32768
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 10188,
+      "hard": 10188
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/system/bin/linker64",
+    "/data/data/com.termux/files/usr/bin/node",
+    "[vdso]",
+    "/data/data/com.termux/files/usr/lib/libtermux-exec.so",
+    "/apex/com.android.runtime/lib64/bionic/libdl.so",
+    "/data/data/com.termux/files/usr/lib/libz.so.1.2.12",
+    "/data/data/com.termux/files/usr/lib/libcares.so",
+    "/data/data/com.termux/files/usr/lib/openssl-1.1/libcrypto.so.1.1",
+    "/data/data/com.termux/files/usr/lib/openssl-1.1/libssl.so.1.1",
+    "/data/data/com.termux/files/usr/lib/libicui18n.so.71.1",
+    "/data/data/com.termux/files/usr/lib/libicuuc.so.71.1",
+    "/apex/com.android.runtime/lib64/bionic/libm.so",
+    "/data/data/com.termux/files/usr/lib/libc++_shared.so",
+    "/apex/com.android.runtime/lib64/bionic/libc.so",
+    "/data/data/com.termux/files/usr/lib/libicudata.so.71.1",
+    "/system/lib64/libnetd_client.so",
+    "/system/lib64/libc++.so",
+    "/apex/com.android.art/lib64/libandroidicu.so",
+    "/system/lib64/libbase.so",
+    "/apex/com.android.art/lib64/libicuuc.so",
+    "/apex/com.android.art/lib64/libicui18n.so",
+    "/system/lib64/liblog.so"
+  ]
+}
